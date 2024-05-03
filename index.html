@@ -25,7 +25,7 @@
 
         <h3>4.¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
             formulario? </h3>
-        <p> a. <description> b. <info> c.<placeholder> <b>d.</label></b> </p>
+        <p> a. description b. info c.placeholder <b>d.label</b> </p>
 
         <h3>5. ¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario?
         </h3>
@@ -39,10 +39,183 @@
         <p> a. list b. dropdown <b>c. select </b> d: input type="list" </p>
         <h3>8:¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? </h3>
         <p> <b>a) text </b> b) email c) mail d)input</p>
+        <h3> 9.¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?
+        </h3>
+        <p> <b>a. value </b>b) default c) preset d) initial </p>
+        <h3> 10. ¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía MDN </h3>
+        <p> HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso
+            determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados
+            HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares
+            son compartidas por un grupo de ellos
+            ejemplos:un request method puede ser safe, idempotent, o cacheable.
+        </p>
+        <h3>11.¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía
+            MDN </h3>
+        <h1>TABLA</h1>
+        <table>
+            <tr>
+                <th colspan="3">Respuestas informativas</th>
+            <tr>
+
+                <th>nombre</th>
+                <th>codigo</th>
+                <th>descripcion</th>
+            </tr>
+            <tr>
+
+                <td> Continue</td>
+                <td>100 Continue</td>
+                <td> respuesta provisional indica que todo hasta ahora</td>
+            </tr>
+            <tr>
+                <td>Switching Protocols</td>
+                <td> 101 Switching Protocol</td>
+                <td>Este código se envía en respuesta a un encabezado de solicitud Upgrade por el cliente e indica que
+                    el servidor</td>
+            </tr>
+            <tr>
+                <td>Processing </td>
+                <td>102 Processing </td>
+                <td>Este código indica que el servidor ha recibido la solicitud y aún se encuentra procesandola.</td>
+            </tr>
+            <tr>
+                <td>Early Hints</td>
+                <td>103 Early Hints </td>
+                <td>Este código de estado está pensado principalmente para ser usado con el encabezado Link, permitiendo
+                    que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.
+
+                </td>
+            <tr>
+                <th colspan="3">Respuestas satisfactorias</th>
+            </tr>
+            <tr>
+                <td>OK</td>
+                <td>200 OK</td>
+                <td>La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP</td>
+            </tr>
+            <tr>
+                <td>Created</td>
+                <td>201 Created </td>
+                <td>La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello. Ésta es
+                    típicamente la respuesta enviada después de una petición PUT.</td>
+            </tr>
+            <tr>
+                <td>Aceptado </td>
+                <td>202 Aceptado </td>
+                <td>La solicitud se ha recibido, pero aún no se ha actuado. Es una petición "sin compromiso", lo que
+                    significa que no hay manera en HTTP que permite enviar una respuesta asíncrona que indique el
+                    resultado del procesamiento de la solicitud.</td>
+            </tr>
+            <tr>
+                <td> Non-Authoritative Information</td>
+                <td>203 Non-Authoritative Information</td>
+                <td>El código de respueta de estado del Protocolo de Transferencia de Hipertexto (HTTP) 203
+                    Non-Authoritative Information indica que la peticion fue satisfactoria pero su contenido ha sido
+                    modificado por un transformador proxy desde los origenes del servidor 200 (OK)
+
+                </td>
+            </tr>
+            <tr>
+                <td>No Content</td>
+                <td>204 No Content</td>
+                <td>La petición se ha completado con éxito pero su respuesta no tiene ningún contenido, aunque los
+                    encabezados pueden ser útiles. El agente de usuario puede actualizar sus encabezados en caché para
+                    este recurso con los nuevos valores.</td>
+            </tr>
+            <tr>
+                <td>Reset Content</td>
+                <td>205 Reset Content</td>
+                <td>La petición se ha completado con éxito, pero su respuesta no tiene contenidos y además, el agente de
+                    usuario tiene que inicializar la página desde la que se realizó la petición, este código es útil por
+                    ejemplo para páginas con formularios cuyo contenido debe borrarse después de que el usuario lo
+                    envíe.</td>
+            </tr>
+            <tr>
+                <td>Partial Content</td>
+                <td>206 Partial Content</td>
+                <td>La petición servirá parcialmente el contenido solicitado. Esta característica es utilizada por
+                    herramientas de descarga como wget para continuar la transferencia de descargas anteriormente
+                    interrumpidas, o para dividir una descarga y procesar las partes simultáneamente.</td>
+            </tr>
+            <tr>
+                <td>Multi-Status</td>
+                <td>207 Multi-Status</td>
+                <td>Una respuesta Multi-Estado transmite información sobre varios recursos en situaciones en las que
+                    varios códigos de estado podrían ser apropiados. El cuerpo de la petición es un mensaje XML.</td>
+            </tr>
+            <tr>
+                <td>Multi-Status</td>
+                <td>208 Multi-Status </td>
+                <td>El listado de elementos DAV ya se notificó previamente, por lo que no se van a volver a listar.</td>
+            </tr>
+            <tr>
+                <td>IM Used</td>
+                <td>226 IM Used</td>
+                <td>El servidor ha cumplido una petición GET para el recurso y la respuesta es una representación del
+                    resultado de una o más manipulaciones de instancia aplicadas a la instancia actual.
+
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3">Redirecciones</th>
+            </tr>
+            <tr>
+                <td> Multiple Choice</td>
+                <td>300 Multiple Choice</td>
+                <td>Esta solicitud tiene más de una posible respuesta. User-Agent o el usuario debe escoger uno de
+                    ellos. No hay forma estandarizada de seleccionar una de las respuestas</td>
+            </tr>
+            <tr>
+                <td> Moved Permanently</td>
+                <td>391 Moved Permanently</td>
+                <td>Este código de respuesta significa que la URI del recurso solicitado ha sido cambiado. Probablemente
+                    una nueva URI sea devuelta en la respuesta.
+
+                </td>
+            </tr>
+            <tr>
+                <td> Found</td>
+                <td>302 found</td>
+                <td>Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado
+                    temporalmente. Nuevos cambios en la URI serán agregados en el futuro. Por lo tanto, la misma URI
+                    debe ser usada por el cliente en futuras solicitudes.</td>
+            </tr>
+            <tr>
+                <td> See Other</td>
+                <td>303 See Other</td>
+                <td>El servidor envía esta respuesta para dirigir al cliente a un nuevo recurso solicitado a otra
+                    dirección usando una petición GET.
+
+                </td>
+            </tr>
+            <tr>
+                <td> Not Modified</td>
+                <td>304 Not Modified</td>
+                <td>Esta es usada para propósitos de "caché". Le indica al cliente que la respuesta no ha sido
+                    modificada. Entonces, el cliente puede continuar usando la misma versión almacenada en su caché.
+                </td>
+            </tr>
+            <tr>
+                <td> Use Proxy </td>
+                <td>305 Use Proxy</td>
+                <td>Fue definida en una versión previa de la especificación del protocolo HTTP para indicar que una
+                    respuesta solicitada debe ser accedida desde un proxy. Ha quedado obsoleta debido a preocupaciones
+                    de seguridad correspondientes a la configuración de un proxy.
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+
     </main>
     <footer>
         <p> ñanto tiara</p>
     </footer>
 </body>
-
-</html>
